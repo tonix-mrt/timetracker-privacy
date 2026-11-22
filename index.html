@@ -1,121 +1,162 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutzrichtlinie – TimeTracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TimeTracked – Datenschutzerklärung / Privacy Policy</title>
   <style>
     :root {
-      --bg: #f8f9fa;
+      --bg: #f4f6f8;
       --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #2563eb;
+      --text: #0f172a;
+      --muted: #64748b;
+      --primary: #2563eb;
       --border: #e5e7eb;
     }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --card: #1e293b;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --primary: #3b82f6;
+        --border: #334155;
+      }
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
       color: var(--text);
       line-height: 1.65;
-      margin: 0;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 4rem;
     }
     main {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
-      background: var(--card);
-      padding: 2.5rem;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+    header {
+      margin-bottom: 1.75rem;
     }
     h1 {
-      margin-top: 0;
-      font-size: 1.85rem;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.75rem;
+      font-size: 1.9rem;
+      margin: 0 0 0.35rem;
+      letter-spacing: -0.02em;
     }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      color: var(--accent);
-    }
-    p, li {
-      font-size: 1rem;
-    }
-    ul {
-      padding-left: 1.25rem;
-    }
-    .meta {
+    .subtitle {
       color: var(--muted);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    .lang-nav {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .lang-nav a {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
       font-size: 0.9rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
       margin-bottom: 1.5rem;
     }
+    h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 1.25rem 0 0.35rem;
+    }
+    p, li {
+      color: var(--text);
+    }
+    a {
+      color: var(--primary);
+    }
     footer {
-      margin-top: 2.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.85rem;
+      text-align: center;
       color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>Datenschutzrichtlinie für TimeTracker</h1>
-    <p class="meta">Stand: November 2026</p>
+    <header>
+      <h1>TimeTracked – Datenschutz / Privacy Policy</h1>
+      <p class="subtitle">100 % lokal auf deinem Gerät · 100% On-Device Storage · Stand / Updated: 2026</p>
+      <nav class="lang-nav">
+        <a href="#de">Deutsch</a>
+        <a href="#en">English</a>
+      </nav>
+    </header>
 
-    <h2>1. Verantwortlicher</h2>
-    <p>
-      Verantwortlich für die Datenverarbeitung im Zusammenhang mit der App <strong>TimeTracker</strong> ist:<br>
-      [Dein Vor- und Nachname / Firmenname]<br>
-      [Deine Straße und Hausnummer]<br>
-      [PLZ und Ort, Land]<br>
-      E-Mail: <a href="mailto:[Deine E-Mail-Adresse]">[Deine E-Mail-Adresse]</a>
-    </p>
+    <section id="de">
+      <h2>Datenschutzerklärung (Deutsch)</h2>
+      <h3>1. Grundsatz</h3>
+      <p><strong>TimeTracked erhebt, überträgt, speichert oder teilt keinerlei personenbezogene Daten auf externen Servern.</strong> Alle erfassten Daten verbleiben ausschließlich lokal auf deinen eigenen Apple-Geräten.</p>
 
-    <h2>2. Grundsatz der Datenverarbeitung</h2>
-    <p>
-      Der Schutz deiner persönlichen Daten ist uns wichtig. Die App <strong>TimeTracker</strong> wurde nach dem Prinzip der Datensparsamkeit entwickelt. Alle von dir erfassten Zeiten, Projekte, Aufgaben und Notizen werden <strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert. Es findet keine automatische Übertragung dieser Daten an unsere Server oder an Dritte statt.
-    </p>
+      <h3>2. Lokale Datenspeicherung</h3>
+      <p>Arbeitszeiten, Pausen, Sollzeiten, Fahrtzeiten, Auslagen und App-Einstellungen werden ausschließlich lokal im geschützten App-Speicher (<code>App Group Container</code>) deines iPhone, iPad oder deiner Apple Watch gespeichert.</p>
 
-    <h2>3. Welche Daten werden verarbeitet?</h2>
-    <ul>
-      <li><strong>Zeiterfassungsdaten:</strong> Start- und Endzeiten, Projektnamen, Kategorien und optionale Notizen, die du selbst eingibst. Diese verbleiben lokal auf deinem Endgerät.</li>
-      <li><strong>App-Einstellungen:</strong> Deine persönlichen Präferenzen (z. B. Design, Benachrichtigungen oder Währung/Stundensätze), ebenfalls lokal gespeichert.</li>
-      <li><strong>Exportierte Dateien:</strong> Wenn du Daten manuell exportierst (z. B. als CSV oder PDF), liegt die weitere Verarbeitung und Weitergabe in deiner eigenen Verantwortung.</li>
-    </ul>
+      <h3>3. Widgets, Live Activities &amp; Apple Watch</h3>
+      <ul>
+        <li><strong>Widgets &amp; Live Activities:</strong> Greifen ausschließlich lokal auf den gemeinsamen App-Group-Speicher zu.</li>
+        <li><strong>Apple Watch Synchronisation:</strong> Erfolgt direkt zwischen deinem iPhone und deiner gekoppelten Apple Watch über Apples verschlüsseltes Framework <em>WatchConnectivity</em> – ohne externe Server.</li>
+      </ul>
 
-    <h2>4. Keine Weitergabe an Dritte &amp; kein Tracking</h2>
-    <p>
-      TimeTracker verwendet keine Werbenetzwerke, keine Tracking-SDKs und gibt keine personenbezogenen Daten an Dritte weiter.
-    </p>
-    <!-- Hinweis: Falls du Google Firebase, AdMob, Crashlytics oder Cloud-Sync nutzt, entferne den Satz oben und liste die jeweiligen Dienste hier mit Link zu deren Datenschutzerklärung auf. -->
+      <h3>4. Lokale Benachrichtigungen &amp; Exporte</h3>
+      <p>Optionale Feierabend-Erinnerungen werden ausschließlich lokal auf deinem Gerät geplant. Exportierte CSV-, PDF- oder JSON-Dateien werden lokal generiert und nur dann weitergegeben, wenn du sie aktiv über das System-Teilen-Menü sicherst oder versendest.</p>
 
-    <h2>5. Speicherdauer und Löschung</h2>
-    <p>
-      Deine Daten bleiben so lange auf deinem Gerät gespeichert, bis du sie innerhalb der App löschst oder die App vollständig deinstallierst. Beim Deinstallieren der App werden alle lokal gespeicherten App-Daten durch das Betriebssystem entfernt.
-    </p>
+      <h3>5. Kein Tracking &amp; keine Werbung</h3>
+      <p>TimeTracked enthält keine Analyse-SDKs, kein Tracking und keine Werbung.</p>
 
-    <h2>6. Deine Rechte (DSGVO)</h2>
-    <p>
-      Du hast nach der Datenschutz-Grundverordnung (DSGVO) das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie das Recht auf Datenübertragbarkeit und Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Da wir selbst keine personenbezogenen Daten von dir auf unseren Servern speichern, kannst du deine Daten jederzeit direkt in der App einsehen, ändern oder löschen.
-    </p>
+      <h3>6. Löschung &amp; Kontakt</h3>
+      <p>Du kannst Einträge jederzeit in der App löschen oder alle Daten vollständig durch Deinstallation der App entfernen. Bei Fragen erreichst du den Entwickler unter <a href="https://github.com/tonix-mrt/TimeTrackerIOS">github.com/tonix-mrt/TimeTrackerIOS</a>.</p>
+    </section>
 
-    <h2>7. Änderungen dieser Datenschutzrichtlinie</h2>
-    <p>
-      Wir behalten uns vor, diese Datenschutzrichtlinie bei Bedarf anzupassen, um sie an geänderte rechtliche Anforderungen oder neue Funktionen der App anzugleichen. Die jeweils aktuelle Fassung ist immer unter dieser URL abrufbar.
-    </p>
+    <section id="en">
+      <h2>Privacy Policy (English)</h2>
+      <h3>1. Overview</h3>
+      <p><strong>TimeTracked does not collect, transmit, sell, or share any personal data with external servers or third parties.</strong> All data remains strictly on your own Apple devices.</p>
 
-    <h2>8. Kontakt</h2>
-    <p>
-      Bei Fragen zum Datenschutz wende dich bitte per E-Mail an:
-      <a href="mailto:[Deine E-Mail-Adresse]">[Deine E-Mail-Adresse]</a>
-    </p>
+      <h3>2. On-Device Storage</h3>
+      <p>Work hours, breaks, target schedules, travel logs, expenses, and app settings are stored exclusively on your device inside Apple's sandboxed local App Group container.</p>
+
+      <h3>3. Widgets, Live Activities &amp; Apple Watch</h3>
+      <ul>
+        <li><strong>Widgets &amp; Live Activities:</strong> Read only the local state stored on your device via the shared App Group container.</li>
+        <li><strong>Apple Watch Sync:</strong> Syncs directly between your iPhone and paired Apple Watch via Apple's <em>WatchConnectivity</em> framework without passing through third-party servers.</li>
+      </ul>
+
+      <h3>4. Local Notifications &amp; Exports</h3>
+      <p>Optional end-of-day reminders are scheduled solely on-device. CSV, PDF, and JSON exports are generated locally and are only shared when you explicitly choose a destination via the iOS share or export sheet.</p>
+
+      <h3>5. No Analytics, Ads, or Tracking</h3>
+      <p>TimeTracked uses no third-party analytics SDKs, no ad networks, and no user tracking.</p>
+
+      <h3>6. Deleting Data &amp; Contact</h3>
+      <p>You may delete individual entries inside the app at any time, or remove all locally stored data by uninstalling the app. For support or privacy inquiries, visit <a href="https://github.com/tonix-mrt/TimeTrackerIOS">github.com/tonix-mrt/TimeTrackerIOS</a>.</p>
+    </section>
 
     <footer>
-      &copy; 2026 [Dein Name / TimeTracker]. Alle Rechte vorbehalten.
+      © 2026 Antonio Martorana · TimeTracked
     </footer>
   </main>
 </body>
